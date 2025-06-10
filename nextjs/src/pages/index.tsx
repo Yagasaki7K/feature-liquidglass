@@ -5,7 +5,9 @@ import styled from 'styled-components'
 const HomeDetails = styled.div`
 
     .bg {
-        position:absolute;inset:0;z-index:-1
+        position:absolute;
+        inset:0;
+        z-index:-1
     }
 
     .bg img {
@@ -40,9 +42,10 @@ const HomeDetails = styled.div`
         background:#fff;
         border-radius:10px;
     }
+
     .glass::after {
         transform:rotate(90deg)
-        }
+    }
 `
 
 const Index = () => {
