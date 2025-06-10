@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9eb5a4d0-a08e-41c3-9d97-f7e42d3fa6ef)
+![image](https://github.com/user-attachments/assets/d05ad5c2-e53b-4484-b602-42c5d8819509)
 
 # Apple Introduces Elegant and Beautiful New Software Design
 
