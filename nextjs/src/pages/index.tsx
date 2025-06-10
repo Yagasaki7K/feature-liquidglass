@@ -55,6 +55,7 @@ const Index = () => {
                 <img src="/apple.jpg" alt=""/>
                 <img src="/galaxy.jpg" alt=""/>
                 <img src="/pastel.jpg" alt=""/>
+                <img src="/water.jpg" alt=""/>
             </div>
 
             <button id="btn" className="glass"></button>
