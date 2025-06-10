@@ -9,6 +9,7 @@ Apple today previewed a beautiful new software design that makes apps and system
 “At Apple, we’ve always believed in the deep integration of hardware and software to make technology intuitive, beautiful, and a joy to use,” said Alan Dye, Apple’s vice president of Human Interface Design. “This is the biggest software design update we’ve ever done. Carefully crafted from a rethink of the fundamental elements that make up our software, the new design features our new Liquid Glass material, which combines the optical qualities of glass with the fluidity that only Apple can deliver, transforming with the content or context. This new design lays the foundation for even more incredible experiences in the future, making even the simplest interactions more fun and magical.”
 
 You can see the demo (running in Next.js) in [https://ios26-lg.vercel.app/](https://ios26-lg.vercel.app/)
+
 The same version in html and css is working fine, don't hurry.
 
 ![image](https://github.com/user-attachments/assets/334eca24-e7d0-49e9-81f9-80df5dcf11f7)
