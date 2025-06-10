@@ -49,9 +49,9 @@ const Index = () => {
     return (
         <HomeDetails>
             <div className="bg">
-                <img src="https://i.ibb.co/bMvc7Zr6/Vibrant-Summer-Meadow-Watercolor.png" alt=""/>
-                <img src="https://i.ibb.co/ZRH04pV3/Vibrant-Summer-Meadow-Watercolor-1.png" alt=""/>
-                <img src="https://i.ibb.co/bMvc7Zr6/Vibrant-Summer-Meadow-Watercolor.png" alt=""/>
+                <img src="/apple.jpg" alt=""/>
+                <img src="/galaxy.jpg" alt=""/>
+                <img src="/pastel.jpg" alt=""/>
             </div>
 
             <button id="btn" className="glass"></button>
