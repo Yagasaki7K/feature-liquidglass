@@ -1,6 +1,6 @@
-import BtnPlus from '@/components/BtnPlus'
-import React from 'react'
-import styled from 'styled-components'
+import BtnPlus from "@/components/BtnPlus";
+import React from "react";
+import styled from "styled-components";
 
 const HomeDetails = styled.div`
 
@@ -46,22 +46,22 @@ const HomeDetails = styled.div`
     .glass::after {
         transform:rotate(90deg)
     }
-`
+`;
 
 const Index = () => {
-    return (
-        <HomeDetails>
-            <div className="bg">
-                <img src="/apple.jpg" alt=""/>
-                <img src="/galaxy.jpg" alt=""/>
-                <img src="/pastel.jpg" alt=""/>
-                <img src="/water.jpg" alt=""/>
-            </div>
+	return (
+		<HomeDetails>
+			<div className="bg">
+				<img src="/apple.jpg" alt="" />
+				<img src="/galaxy.jpg" alt="" />
+				<img src="/pastel.jpg" alt="" />
+				<img src="/water.jpg" alt="" />
+			</div>
 
-            <button id="btn" className="glass"></button>
-            <BtnPlus/>
-        </HomeDetails>
-    )
-}
+			<button id="btn" className="glass"></button>
+			<BtnPlus />
+		</HomeDetails>
+	);
+};
 
-export default Index
+export default Index;

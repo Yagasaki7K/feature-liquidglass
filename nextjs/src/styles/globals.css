@@ -1,13 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-html,body {
-    height:100%;
-    min-height:500vh;
-    margin:0;
-    font-family:system-ui,sans-serif;
-    overflow-x:hidden
+html,
+body {
+	height: 100%;
+	min-height: 500vh;
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	overflow-x: hidden;
 }
