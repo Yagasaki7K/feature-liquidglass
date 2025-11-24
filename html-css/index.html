@@ -27,32 +27,57 @@
   </filter>
 </svg>
 </body>
-    <style>
+<style>
     html,body {
         height:100%;
-        min-height:500vh;
+        min-height:100vh;
         margin:0;
         font-family:system-ui,sans-serif;
-        overflow-x:hidden
+        overflow:hidden;
+        background:#05060a;
+        color:#fff;
+        display:grid;
+        place-items:center;
     }
 
     .bg{
-        position:absolute;
+        position:fixed;
         inset:0;
-        z-index:-1
+        z-index:-1;
+        overflow:hidden;
     }
 
     .bg img{
+        position:absolute;
+        inset:0;
         width:100%;
-        display:block
+        height:100%;
+        object-fit:cover;
+        display:block;
+        opacity:0;
+        animation:fade 32s infinite ease-in-out;
+    }
+
+    .bg img:nth-child(1){animation-delay:0s}
+    .bg img:nth-child(2){animation-delay:8s}
+    .bg img:nth-child(3){animation-delay:16s}
+    .bg img:nth-child(4){animation-delay:24s}
+
+    .bg::after{
+        content:"";
+        position:absolute;
+        inset:0;
+        background:radial-gradient(circle at 15% 20%,rgba(255,255,255,.08),transparent 30%),
+                   radial-gradient(circle at 85% 80%,rgba(255,255,255,.05),transparent 30%),
+                   linear-gradient(135deg,rgba(0,0,0,.45),rgba(0,0,0,.2));
     }
 
     .glass{
         position:fixed;
         inset:50% auto auto 50%;
         transform:translate(-50%,-50%);
-        width:20rem;
-        height:20rem;
+        width:clamp(12rem, 30vw, 22rem);
+        height:clamp(12rem, 30vw, 22rem);
         border-radius:50%;
         background:rgba(255,255,255,.08);
         border:2px solid transparent;
@@ -63,18 +88,40 @@
         place-items:center;
         cursor:pointer;
         outline:0;
+        transition:transform .3s ease, box-shadow .3s ease, background .3s ease;
+    }
+
+    .glass:focus-visible{
+        box-shadow:0 0 0 3px rgba(255,255,255,.7),0 24px 48px rgba(0,0,0,.18);
+    }
+
+    .glass:hover{
+        transform:translate(-50%,-50%) scale(1.03);
+        background:rgba(255,255,255,.12);
     }
 
     .glass::before,
     .glass::after{
         content:"";
         position:absolute;
-        width:40%;height:10px;
+        width:clamp(32%, 12vw, 42%);
+        height:clamp(8px, 1.2vw, 12px);
         background:#fff;
         border-radius:10px;
     }
     .glass::after{
         transform:rotate(90deg)
+    }
+
+    @keyframes fade {
+        0%,20% {opacity:1; transform:scale(1);}
+        25%,100% {opacity:0; transform:scale(1.05);}
+    }
+
+    @media (max-width: 600px) {
+        .glass{
+            box-shadow:0 0 0 1px rgba(255,255,255,.5),0 12px 24px rgba(0,0,0,.16);
+        }
     }
     </style>
 </html>
